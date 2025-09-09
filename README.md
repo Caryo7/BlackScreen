@@ -7,6 +7,12 @@ Ce programme a été développé pour les professeurs qui utilisent un tableau b
 ## Utilisation
 Vous pouvez utiliser le logiciel facilement. Une fois lancé, une fenêtre noir apparait en plein écran. Cette dernière **n'est pas au premier plan** ! Vous pouvez donc en mettre au dessus sans problèmes.
 
+## Focus et premier plan
+Tout le logiciel a été développé pour des fonctions avec focus. Quand une autre fenêtre est au premier plan, vous ne pouvez pas changer l'état de l'écran noir.
+Vous avez à disposition deux indicateurs :
+ - bleu indique si l'écran noir est toujours au premier plan (on ne peut pas faire venir de fenêtre au dessus)
+ - rouge indique si la fenêtre à le focus. Si cette dernière ne l'a pas, l'indicateur est allumé, et vous ne pouvez pas faire les fonctions suivantes.
+
 ## Fonction pratique
 Pour voir sous la fenêtre noire, utilisez la touche Majuscule. Cette dernière rend le programme transparent pour laisser apparaitre le contenu de l'écran. Vous saurez donc où se trouvent vos autres fenêtres. 
 
