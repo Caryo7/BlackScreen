@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "BlackScreen"
-#define MyAppVersion "0.1"
+#define MyAppVersion "0.2"
 #define MyAppPublisher "Benoit Charreyron"
 #define MyAppExeName "blackscreen.exe"
 
@@ -19,7 +19,7 @@ DefaultDirName={userappdata}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 LicenseFile=D:\Programmes\Python\Projects\BlackScreen\LICENSE
 OutputDir=D:\Programmes\Python\Projects\BlackScreen\releases
-OutputBaseFilename=setup-BlackScreen-0.1
+OutputBaseFilename=setup-BlackScreen-{#MyAppVersion}
 PrivilegesRequired=lowest
 Compression=lzma
 SolidCompression=yes
