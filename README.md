@@ -40,6 +40,8 @@ transparentcolor = green  ; Couleur à retirer sur la fenêtre pour la rendre tr
 bordercolor = red         ; Couleur des bords de zone transparentes
 alphakey = shift          ; Touche qui rend la fenêtre transparente
 drawingcolor = blue       ; Couleur de la zone transparente pendant l'édition
+backgroundcolor = black   ; Couleur de fond de la fenêtre
+foregroundcolor = white   ; Couleur du texte dans la fenêtre d'aide.
 
 [cross]
 size = 20                 ; Taille de la croix de fermeture
@@ -58,6 +60,7 @@ Packages requirement:
 Programmes de compilation d'installateurs : Inno Setup Scripts
 
 ## Compilation
+Démarrez un terminal dans l'environnement virtuel voulu, puis effectuez les instructions suivantes.
 Utilisez le script `compile.bat` pour compiler le programme, ou exécutez les commandes suivantes
 ```
 > pyinstaller blackscreen.spec
