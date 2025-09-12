@@ -13,17 +13,19 @@ class Window:
         self.sizecross = int(self.parser.get('cross', 'size'))
         self.colorcross = self.parser.get('cross', 'color')
         self.drawingcolor = self.parser.get('app', 'drawingcolor')
+        self.background = self.parser.get('app', 'background')
+        self.foreground = self.parser.get('app', 'foreground')
 
         self.master = Tk()
         self.master.wm_state('zoomed')
         self.master.wm_attributes('-fullscreen', 1)
         self.master.wm_attributes('-transparentcolor', self.transparentcolor)
         self.master.wm_attributes('-alpha', 1.0)
-        self.master['bg'] = 'black'
+        self.master['bg'] = self.background
         self.master.title('Black Screen for projections')
         self.master.columnconfigure(0, weight=1)
         self.master.rowconfigure(0, weight=1)
-        self.canvas = Canvas(self.master, bg = 'black')
+        self.canvas = Canvas(self.master, bg = self.background)
         self.canvas.grid(sticky='nswe')
 
         self.pressed = False
@@ -51,7 +53,7 @@ class Window:
         z.title('Aide')
         z.columnconfigure(0, weight=1)
         z.rowconfigure(0, weight=1)
-        t = Text(z, width=50, height=15, wrap = 'word', bg = 'black', fg = 'white')
+        t = Text(z, width=50, height=15, wrap = 'word', bg = self.background, fg = self.foreground)
         t.grid(sticky = 'nswe')
         t.insert('end', """\
 Documentation
