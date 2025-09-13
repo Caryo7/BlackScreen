@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "BlackScreen"
-#define MyAppVersion "0.2"
+#define MyAppVersion "0.4"
 #define MyAppPublisher "Benoit Charreyron"
 #define MyAppExeName "blackscreen.exe"
 

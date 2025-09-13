@@ -44,9 +44,17 @@ coll = COLLECT(
 )
 
 print('Config file copy...')
-os.mkdir('dist/BlackScreen/config')
-f = open('config/default.ini', 'rb')
-ft = open('dist/BlackScreen/config/default.ini', 'wb')
-ft.write(f.read())
-f.close()
-ft.close()
+for fp, to in [('mkdir', 'dist/blackscreen/config'),
+               ('config/default.ini', 'dist/blackscreen/config/default.ini'),
+               ('readme.md', 'dist/blackscreen/readme.md'),
+               ('LICENSE', 'dist/blackscreen/LICENSE'),
+               ]:
+               
+    if fp == 'mkdir':
+        os.mkdir(to)
+    else:
+        f = open(fp, 'rb')
+        ft = open(to, 'wb')
+        ft.write(f.read())
+        f.close()
+        ft.close()
